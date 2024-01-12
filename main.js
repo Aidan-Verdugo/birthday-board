@@ -4,8 +4,8 @@
 //varriables related to child info
 let childName = ["name1","name2","name3","name4","name5"];
 let theme = ["Dino","Temp","Dino","Temp","Dino"];
-let partyTime = ["10:00 am","11:00 am","10:00 am"," 4:00 pm"," 4:00 pm"];
-let partyDate = ["30","30","30","29","31"]
+let partyTime = ["10:00am","11:00am","10:00am","3:00pm","4:00pm"];
+let partyDate = ["12","12","12","12","12"]
 let bgFiles = ["dino.png","temp.png","no-parties.png"];
 let time = new Date();
 
@@ -19,15 +19,16 @@ let childIndex = 0;
 //varriables related to csv file
 var file = "file.csv";
 
+import bData from './TestData.json';
+console.log(bData);
 
+timeName();
+setname(childNameActive, themeActive);
 
-document.getElementById("n1").innerHTML = time.getHours();
-
-
-//timeName();
-//setname(childNameActive, themeActive);
-
-
+function removeSpaces(inputString){
+    inputString.replace(/\s/g, '');
+    return(inputString);
+}
 
 function sortNames(groupNumber, nameHolder, timeHolder){
     let iT;
@@ -56,19 +57,19 @@ function sortNames(groupNumber, nameHolder, timeHolder){
 
     for (iT = 0; iT <= timeHolder.length; iT++){
         if(partyDate[iT] == time.getDate()){
-        sortifeven(1,"10:00 am", iT);
-        sortifodd(2,"10:00 am","11:00 am", iT);
-        sortifeven(3,"11:00 am", iT);
-        sortifodd(4,"11:00 am","12:00 pm", iT);
-        sortifeven(5,"12:00 pm", iT);
-        sortifodd(6,"12:00 pm"," 1:00 pm", iT);
-        sortifeven(7," 1:00 pm", iT);
-        sortifodd(8," 1:00 pm"," 2:00 pm", iT);
-        sortifeven(9," 2:00 pm", iT);
-        sortifodd(10," 2:00 pm"," 3:00 pm", iT);
-        sortifeven(11," 3:00 pm", iT);
-        sortifodd(12," 3:00 pm"," 4:00 pm", iT);
-        sortifeven(13," 4:00 pm", iT);}
+        sortifeven(1,"10:00am", iT);
+        sortifodd(2,"10:00am","11:00am", iT);
+        sortifeven(3,"11:00am", iT);
+        sortifodd(4,"11:00am","12:00pm", iT);
+        sortifeven(5,"12:00pm", iT);
+        sortifodd(6,"12:00pm","1:00pm", iT);
+        sortifeven(7,"1:00pm", iT);
+        sortifodd(8,"1:00pm","2:00pm", iT);
+        sortifeven(9,"2:00pm", iT);
+        sortifodd(10,"2:00pm","3:00pm", iT);
+        sortifeven(11,"3:00pm", iT);
+        sortifodd(12,"3:00pm","4:00pm", iT);
+        sortifeven(13,"4:00pm", iT);}
     }
     if(nameGroup.length == 0){
         nameGroup = ["empty"];
@@ -103,19 +104,19 @@ function sortThemes(groupNumber, themeHolder, timeHolder){
 
     for (iT = 0; iT <= timeHolder.length; iT++){
         if(partyDate[iT] == time.getDate()){
-        sortifeven(1,"10:00 am", iT);
-        sortifodd(2,"10:00 am","11:00 am", iT);
-        sortifeven(3,"11:00 am", iT);
-        sortifodd(4,"11:00 am","12:00 pm", iT);
-        sortifeven(5,"12:00 pm", iT);
-        sortifodd(6,"12:00 pm"," 1:00 pm", iT);
-        sortifeven(7," 1:00 pm", iT);
-        sortifodd(8," 1:00 pm"," 2:00 pm", iT);
-        sortifeven(9," 2:00 pm", iT);
-        sortifodd(10," 2:00 pm"," 3:00 pm", iT);
-        sortifeven(11," 3:00 pm", iT);
-        sortifodd(12," 3:00 pm"," 4:00 pm", iT);
-        sortifeven(13," 4:00 pm", iT);}
+        sortifeven(1,"10:00am", iT);
+        sortifodd(2,"10:00am","11:00am", iT);
+        sortifeven(3,"11:00am", iT);
+        sortifodd(4,"11:00am","12:00pm", iT);
+        sortifeven(5,"12:00pm", iT);
+        sortifodd(6,"12:00pm","1:00pm", iT);
+        sortifeven(7,"1:00pm", iT);
+        sortifodd(8,"1:00pm","2:00pm", iT);
+        sortifeven(9,"2:00pm", iT);
+        sortifodd(10,"2:00pm","3:00pm", iT);
+        sortifeven(11,"3:00pm", iT);
+        sortifodd(12,"3:00pm","4:00pm", iT);
+        sortifeven(13,"4:00pm", iT);}
     }
     if(themeGroup.length == 0){
         themeGroup = ["empty"];
