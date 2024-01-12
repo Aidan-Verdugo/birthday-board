@@ -2,10 +2,10 @@
 
 
 //varriables related to child info
-let childName = ["name1","name2","name3","name4","name5"];
-let theme = ["Dino","Temp","Dino","Temp","Dino"];
-let partyTime = ["10:00am","11:00am","10:00am","3:00pm","4:00pm"];
-let partyDate = ["12","12","12","12","12"]
+let childName = ["empty"];
+let theme = ["empty"];
+let partyTime = ["empty"];
+let partyDate = ["empty"]
 let bgFiles = ["dino.png","temp.png","no-parties.png"];
 let time = new Date();
 
@@ -17,17 +17,23 @@ let childIndex = 0;
 
 
 //varriables related to csv file
-var file = "file.csv";
+import bData from './TestData.json' assert {type:"json"};
 
-import bData from './TestData.json';
-console.log(bData);
-
+pullJasonData();
 timeName();
 setname(childNameActive, themeActive);
 
+function pullJasonData(){
+    childName = bData.childName;
+    theme = bData.theme;
+    partyDate = bData.partyDate;
+    partyTime = bData.partyTime;
+    setTimeout(pullJasonData, nameTime*childNameActive.length);
+}
+
 function removeSpaces(inputString){
-    inputString.replace(/\s/g, '');
-    return(inputString);
+    let tmpString = inputString.replace(/\s/g, '');
+    return(tmpString);
 }
 
 function sortNames(groupNumber, nameHolder, timeHolder){
