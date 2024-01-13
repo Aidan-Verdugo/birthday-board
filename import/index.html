@@ -5,7 +5,7 @@
         <title>Import Birthday Data</title>
     </head>
     <body>
-        <script type="module" src="../javascript/import.js"></script>
+        
         <div class="divholder">
             <div class="floatdivL">
                 <div class="howtoholder">
@@ -16,6 +16,24 @@
             <div class="floatdivR">
                 <div class="datasheetholder">
                     <h1>Input Data</h1>
+                    <div class="nameTableHolder">
+                        <div class="nameTableElement" id="name">
+                            <p>name.name</p><br>
+                        </div>
+                        <div class="nameTableElement" id="time">
+                            <p>time.time</p><br>
+                        </div>
+                        <div class="nameTableElement" id="theme">
+                            <p>theme.theme</p><br>
+                        </div>
+                    </div>
+                    <form>
+                        <input type="text" id="childName-input" placeholder="Child's Name"> <input id="time_input" type="time"> <select id="theme_input">
+                            <option value="Dino">Dinosaur</option>
+                            <option value="temp">
+                        </select> <input  type="button" id="add-btn" value="Add">
+                    </form>
+                    <script type="module" src="../javascript/import.js"></script>
                 </div>
             </div>
             

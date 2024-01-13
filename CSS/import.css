@@ -47,3 +47,10 @@ body{
     padding: .5%;
     height: 90vh;
 }
+.nameTableHolder{
+    width: 100%;
+}
+.nameTableElement{
+    width: 33.3%;
+    float: left;
+}
