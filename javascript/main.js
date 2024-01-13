@@ -63,19 +63,19 @@ function sortNames(groupNumber, nameHolder, timeHolder){
 
     for (iT = 0; iT <= timeHolder.length; iT++){
         if(partyDate[iT] == time.getDate()){
-        sortifeven(1,"10:00am", iT);
-        sortifodd(2,"10:00am","11:00am", iT);
-        sortifeven(3,"11:00am", iT);
-        sortifodd(4,"11:00am","12:00pm", iT);
-        sortifeven(5,"12:00pm", iT);
-        sortifodd(6,"12:00pm","1:00pm", iT);
-        sortifeven(7,"1:00pm", iT);
-        sortifodd(8,"1:00pm","2:00pm", iT);
-        sortifeven(9,"2:00pm", iT);
-        sortifodd(10,"2:00pm","3:00pm", iT);
-        sortifeven(11,"3:00pm", iT);
-        sortifodd(12,"3:00pm","4:00pm", iT);
-        sortifeven(13,"4:00pm", iT);}
+        sortifeven(1,"10:00", iT);
+        sortifodd(2,"10:00","11:00", iT);
+        sortifeven(3,"11:00", iT);
+        sortifodd(4,"11:00","12:00", iT);
+        sortifeven(5,"12:00", iT);
+        sortifodd(6,"12:00","13:00", iT);
+        sortifeven(7,"13:00", iT);
+        sortifodd(8,"13:00","14:00", iT);
+        sortifeven(9,"14:00", iT);
+        sortifodd(10,"14:00","15:00", iT);
+        sortifeven(11,"15:00", iT);
+        sortifodd(12,"15:00","16:00", iT);
+        sortifeven(13,"16:00", iT);}
     }
     if(nameGroup.length == 0){
         nameGroup = ["empty"];
@@ -110,19 +110,19 @@ function sortThemes(groupNumber, themeHolder, timeHolder){
 
     for (iT = 0; iT <= timeHolder.length; iT++){
         if(partyDate[iT] == time.getDate()){
-        sortifeven(1,"10:00am", iT);
-        sortifodd(2,"10:00am","11:00am", iT);
-        sortifeven(3,"11:00am", iT);
-        sortifodd(4,"11:00am","12:00pm", iT);
-        sortifeven(5,"12:00pm", iT);
-        sortifodd(6,"12:00pm","1:00pm", iT);
-        sortifeven(7,"1:00pm", iT);
-        sortifodd(8,"1:00pm","2:00pm", iT);
-        sortifeven(9,"2:00pm", iT);
-        sortifodd(10,"2:00pm","3:00pm", iT);
-        sortifeven(11,"3:00pm", iT);
-        sortifodd(12,"3:00pm","4:00pm", iT);
-        sortifeven(13,"4:00pm", iT);}
+        sortifeven(1,"10:00", iT);
+        sortifodd(2,"10:00","11:00", iT);
+        sortifeven(3,"11:00", iT);
+        sortifodd(4,"11:00","12:00", iT);
+        sortifeven(5,"12:00", iT);
+        sortifodd(6,"12:00","13:00", iT);
+        sortifeven(7,"13:00", iT);
+        sortifodd(8,"13:00","14:00", iT);
+        sortifeven(9,"14:00", iT);
+        sortifodd(10,"14:00","15:00", iT);
+        sortifeven(11,"15:00", iT);
+        sortifodd(12,"15:00","16:00", iT);
+        sortifeven(13,"16:00", iT);}
     }
     if(themeGroup.length == 0){
         themeGroup = ["empty"];
