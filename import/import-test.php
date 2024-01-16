@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-    $connection = pg_connect("host=localhost:8989 dbname=test user=postgres password=password");
+    $connection = pg_connect("host=10.100.100.132:8989 dbname=test user=postgres password=password");
     if (!$connection){
         echo "An error occurred. <br>";
         exit;
