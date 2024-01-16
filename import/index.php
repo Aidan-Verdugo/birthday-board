@@ -9,11 +9,11 @@
         
     </head>
     <body>
-        
+    
         <div class="divholder">
             <div class="floatdivL">
                 <div class="howtoholder">
-                    <h1>How to Input Data</h1>
+                    <h1>How to Input Data  </h1>
                     <p>fill fill fill<br> fill fill fill<br> fill fill fill</p>
                 </div>
             </div>
