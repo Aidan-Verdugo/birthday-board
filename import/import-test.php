@@ -12,6 +12,11 @@
         echo "An error occurred. <br>";
         exit;
     }
+    $ersult = pg_query($connection, "SELECT * FROM partydata");
+    if(!$result){
+        echo "An error occurred. <br>";
+        exit;
+    }
     ?>
     
     <table>
