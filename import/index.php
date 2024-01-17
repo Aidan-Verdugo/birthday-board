@@ -36,7 +36,7 @@
                         
                     </div>
                     
-                    <form id="addInfoForm" accept-charset="utf-8">
+                    <form id="addInfoForm" accept-charset="utf-8" action="info.php" method="post">
                         <input type="text" id="childName_input" placeholder="Child's Name"> <input id="time_input" type="time"> <input type="number" id="day_input" placeholder="Day" style="width: 10%;"> <select id="theme_input">
                             <option value="Dino">Dinosaur</option>
                             <option value="Temp">Temp</option>
