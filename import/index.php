@@ -38,7 +38,6 @@ $result = mysqli_query($dbconnect, $query);
                     <h1>Input Data</h1>
                     <table>
                         <tr>
-                            <th>Index</th>
                             <th>Name</th>
                             <th>Time</th>
                             <th>Day</th>
@@ -48,7 +47,6 @@ $result = mysqli_query($dbconnect, $query);
                         while($rows=$result->fetch_assoc())
                         { ?>
                         <tr>
-                            <td>#</td>
                             <td><?php echo $rows['child_name'];?></td>
                             <td><?php echo $rows['party_time'];?></td>
                             <td><?php echo $rows['party_day'];?></td>
