@@ -24,6 +24,11 @@ if(isset($_POST['delete'])){
     $indexInput = $_POST['rowDelNum'];
     $deleteQuery = "DELETE FROM party_table
     WHERE child_name = '" . $indexInput . "'";
+    if(!mysqli_query($dbconnect, $deleteQuery)){
+        die('could not delete');
+    }else{
+        echo "data deleted.";
+    }
 }
 if(isset($_POST['submit'])){
     $childName_input= $_POST['childName_input'];
