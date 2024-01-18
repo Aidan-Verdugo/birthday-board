@@ -57,7 +57,7 @@ $result = mysqli_query($dbconnect, $query);
                         ?>
                     </table>
                 </div>
-                <div class="form float">
+                <div class="form-float">
                     <form id="addInfoForm" accept-charset="utf-8" action="./info.php" method="POST">
                         <input type="text" name="childName_input" placeholder="Child's Name"> <input name="time_input" type="time"> <input type="number" name="day_input" placeholder="Day" style="width: 10%;"> <select name="theme_input">
                             <option value="Dino">Dinosaur</option>
