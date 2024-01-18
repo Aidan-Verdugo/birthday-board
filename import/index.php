@@ -38,6 +38,7 @@ $result = mysqli_query($dbconnect, $query);
                     <h1>Input Data</h1>
                     <table>
                         <tr>
+                            <th>Index</th>
                             <th>Name</th>
                             <th>Time</th>
                             <th>Day</th>
@@ -47,6 +48,7 @@ $result = mysqli_query($dbconnect, $query);
                         while($rows=$result->fetch_assoc())
                         { ?>
                         <tr>
+                            <td>#</td>
                             <td><?php echo $rows['child_name'];?></td>
                             <td><?php echo $rows['party_time'];?></td>
                             <td><?php echo $rows['party_day'];?></td>
@@ -61,7 +63,7 @@ $result = mysqli_query($dbconnect, $query);
                         <input type="text" name="childName_input" placeholder="Child's Name"> <input name="time_input" type="time"> <input type="number" name="day_input" placeholder="Day" style="width: 10%;"> <select name="theme_input">
                             <option value="Dino">Dinosaur</option>
                             <option value="Temp">Temp</option>
-                        </select> <input  type="submit" name="submit" value="Add"> <input type="submit" name="delete" value="CLEAR ALL">
+                        </select> <input  type="submit" name="submit" value="Add"> <p>|</p> <input type="text" name="rowDelNum" placeholder="Row Index"><input type="submit" value="Delete Row"> <input type="submit" name="clear" value="CLEAR ALL"> <p>|</p> <input type="submit" name="delete" value="CLEAR ALL">
                     </form>
                     
                 </div>
