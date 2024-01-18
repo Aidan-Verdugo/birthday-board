@@ -1,3 +1,18 @@
+<?php
+$hostname = "localhost:3306";
+$username = "root";
+$password = "password";
+$db = "partydb";
+
+$dbconnect = mysqli_connect($hostname, $username, $password, $db);
+
+
+if($dbconnect->connect_error) {
+    die("Database connection failed: " . $dbconnect->connect_error);
+}
+$query = "SELECT * FROM party_table";
+$result = mysqli_query($dbconnect, $query);
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,29 +35,34 @@
             <div class="floatdivR">
                 <div class="datasheetholder">
                     <h1>Input Data</h1>
-                    <div class="nameTableHolder">
-                        <div class="nameTableElement" id="name">
-                            <p>name.name</p><br>
-                        </div>
-                        <div class="nameTableElement" id="time">
-                            <p>time.time</p><br>
-                        </div>
-                        <div class="nameTableElement" id="day">
-                            <p>day.day</p>
-                        </div>
-                        <div class="nameTableElement" id="theme">
-                            <p>theme.theme</p><br>
-                        </div>
-                        
-                    </div>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Time</th>
+                            <th>Day</th>
+                            <th>Theme</th>
+                        </tr>
+                        <?php
+                        while($rows=$result->fetch_assoc())
+                        { ?>
+                        <tr>
+                            <td><?php echo $rows['child_name'];?></td>
+                            <td><?php echo $rows['party_time'];?></td>
+                            <td><?php echo $rows['party_day'];?></td>
+                            <td><?php echo $rows['theme'];?></td>
+                        </tr>
+                        <?php
+                        }
+                        ?>
+                    </table>
                     
-                    <form id="addInfoForm" accept-charset="utf-8" action="info.php" method="post">
-                        <input type="text" id="childName_input" placeholder="Child's Name"> <input id="time_input" type="time"> <input type="number" id="day_input" placeholder="Day" style="width: 10%;"> <select id="theme_input">
+                    <form id="addInfoForm" accept-charset="utf-8" action="./info.php" method="POST">
+                        <input type="text" name="childName_input" placeholder="Child's Name"> <input name="time_input" type="time"> <input type="number" name="day_input" placeholder="Day" style="width: 10%;"> <select name="theme_input">
                             <option value="Dino">Dinosaur</option>
                             <option value="Temp">Temp</option>
-                        </select> <input  type="submit" id="add-btn" value="Add">
+                        </select> <input  type="submit" name="submit" value="Add">
                     </form>
-                    <script type="module" src="../javascript/import.js"></script>
+                    
                 </div>
             </div>
             
