@@ -1,6 +1,6 @@
 <?php
 #-------------------
-$hostname = "localhost:3306";
+$hostname = "192.168.1.85:3306";
 $username = "root";
 $password = "password";
 $db = "partydb";
@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
         echo "Data submitted.";
     }
 }
-header("Location: http://localhost:8089/import/index.php");
+header("Location: http://192.168.1.85:8080/birthday-board/import/index.php");
 die();
 
 #-------------------
