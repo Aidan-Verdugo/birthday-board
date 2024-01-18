@@ -56,15 +56,16 @@ $result = mysqli_query($dbconnect, $query);
                         }
                         ?>
                     </table>
-                    
+                </div>
+                <div class="form float">
                     <form id="addInfoForm" accept-charset="utf-8" action="./info.php" method="POST">
                         <input type="text" name="childName_input" placeholder="Child's Name"> <input name="time_input" type="time"> <input type="number" name="day_input" placeholder="Day" style="width: 10%;"> <select name="theme_input">
                             <option value="Dino">Dinosaur</option>
                             <option value="Temp">Temp</option>
                         </select> <input  type="submit" name="submit" value="Add"> <p>|</p> <input type="text" name="rowDelNum" placeholder="Entry Name"  style="width: 10%;"><input type="submit" name="delete" value="Delete Entry"> <input type="submit" name="clear" value="CLEAR ALL"> <p>|</p> <input type="submit" name="delete" value="CLEAR ALL">
                     </form>
-                    
                 </div>
+                
             </div>
             
         </div>
