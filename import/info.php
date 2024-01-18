@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
         echo "Data submitted.";
     }
 }
-header("Location: http://192.168.1.85:8080/birthday-board/import/index.php");
+header("Location: http://localhost:8080/birthday-board/import/index.php");
 die();
 
 #-------------------

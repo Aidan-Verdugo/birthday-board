@@ -1,5 +1,5 @@
 <?php
-$hostname = "192.168.1.85:3306";
+$hostname = "localhost:3306";
 $username = "root";
 $password = "password";
 $db = "partydb";
@@ -10,7 +10,7 @@ $dbconnect = mysqli_connect($hostname, $username, $password, $db);
 if($dbconnect->connect_error) {
     die("Database connection failed: " . $dbconnect->connect_error);
 }
-$query = "SELECT * FROM partydb.party_table pt";
+$query = "SELECT * FROM party_table";
 $result = mysqli_query($dbconnect, $query);
 ?>
 <!-------------------------------------------------------------------------------------------------------------->
