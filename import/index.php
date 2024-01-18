@@ -10,9 +10,10 @@ $dbconnect = mysqli_connect($hostname, $username, $password, $db);
 if($dbconnect->connect_error) {
     die("Database connection failed: " . $dbconnect->connect_error);
 }
-$query = "SELECT * FROM party_table";
+$query = "SELECT * FROM partydb.party_table pt";
 $result = mysqli_query($dbconnect, $query);
 ?>
+<!-------------------------------------------------------------------------------------------------------------->
 <!DOCTYPE html>
 <html>
     <head>
