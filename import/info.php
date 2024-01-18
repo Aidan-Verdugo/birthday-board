@@ -1,6 +1,6 @@
 <?php
 #-------------------
-$hostname = "192.168.1.85:3306";
+$hostname = "localhost:3306";
 $username = "root";
 $password = "password";
 $db = "partydb";
