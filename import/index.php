@@ -60,7 +60,7 @@ $result = mysqli_query($dbconnect, $query);
                         <input type="text" name="childName_input" placeholder="Child's Name"> <input name="time_input" type="time"> <input type="number" name="day_input" placeholder="Day" style="width: 10%;"> <select name="theme_input">
                             <option value="Dino">Dinosaur</option>
                             <option value="Temp">Temp</option>
-                        </select> <input  type="submit" name="submit" value="Add">
+                        </select> <input  type="submit" name="submit" value="Add"> <input type="submit" name="delete" value="CLEAR ALL">
                     </form>
                     
                 </div>
