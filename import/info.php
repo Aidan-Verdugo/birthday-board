@@ -5,11 +5,20 @@ $username = "root";
 $password = "password";
 $db = "partydb";
 
+
 $dbconnect = mysqli_connect($hostname, $username, $password, $db);
 
 
 if($dbconnect->connect_error) {
     die("Database connection failed: " . $dbconnect->connect_error);
+}
+if(isset($_POST['delete'])){
+    $removeQuery = "DELETE FROM party_table";
+    if(!mysqli_query($dbconnect, $removeQuery)){
+        die('An error occured while deleting data.');
+    }else{
+        echo "Data deleted.";
+    }
 }
 if(isset($_POST['submit'])){
     $childName_input= $_POST['childName_input'];
