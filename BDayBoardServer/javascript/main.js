@@ -10,7 +10,7 @@ let bgFiles = ["../backgrounds/dino.png","../backgrounds/temp.png","../backgroun
 let time = new Date();
 
 //misc vars
-let nameTime = 120000;
+let nameTime = 30000;
 let childNameActive = ["empty"];
 let themeActive = ["empty"];
 let childIndex = 0;
