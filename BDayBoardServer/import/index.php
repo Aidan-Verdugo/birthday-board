@@ -30,7 +30,22 @@ $result = mysqli_query($dbconnect, $query);
             <div class="floatdivL">
                 <div class="howtoholder">
                     <h1>How to Input Data  </h1>
-                    <p>fill fill fill<br> fill fill fill<br> fill fill fill</p>
+                    <p>&nbsp;</p>
+                    <p><span>Before you can display birthday messages on the main birthday board you first have to input them into the board database. The leftmost input form allows you to add entries to the database. The first field is for the child’s name, this field takes normal text. The second field is for the time of the party, this field only allows you to input time in “HH:MM AM/PM” format. The third field is for the party date, </span>ONLY INPUT THE DAY<span>, it takes the date in “ Day ” format. The last field is a drop-down for selecting the theme of the party, for example, “Dinosaur”. Below is an example of what a fully filled-out form looks like.</span>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p><span>Once the form is filled out click the “Add” button to submit the data. </span><b>PLEASE FILL ALL OF THE FIELDS IN THE FORM BEFORE SUBMITTING<span>. If you accidentally submit a blank form please see</span><span style="font-style:italic">&nbsp;Deleting Data </span>below. </p>
+                    <p>&nbsp;</p>
+                    <img src="./addEntrySS.png">
+                    <h2><a></a>Deleting Data</h2>
+
+                    <p>To delete data use the second form from the right. Type the name of the child you want to remove in the “Entry Name”. After adding the child's name click the “Delete Entry” button. To delete a blank form submission simply leave the “Entry Name” field blank and click the “Delete Entry” button. Below is an example of a properly filled-in data deletion form.</p>
+                    <p>&nbsp;</p>
+                    <img src="./deleteEntrySS.png">
+                    <h2><a></a>Clearing All Data</h2>
+
+                    <p>To clear all data click the “CLEAR ALL” button on the far right. Below is what the “Delete All Data” form looks like.</p>
+                    <img src="./deleteAllDataSS.png">
+                    <p>&nbsp;</p>
                 </div>
             </div>
             <div class="floatdivR">
