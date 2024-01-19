@@ -6,7 +6,7 @@ let childName = ["empty"];
 let theme = ["empty"];
 let partyTime = ["empty"];
 let partyDate = ["empty"]
-let bgFiles = ["../backgrounds/dino.png","../backgrounds/art.png","../backgrounds/tech","../backgrounds/standard","../backgrounds/no-parties.png"];
+let bgFiles = ["../backgrounds/dino.png","../backgrounds/art.png","../backgrounds/tech.png","../backgrounds/standard.png","../backgrounds/no-parties.png"];
 let time = new Date();
 
 //misc vars
