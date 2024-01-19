@@ -11,5 +11,14 @@ services:
       MYSQL_PASSWORD: password
     volumes:
       - data:/var/lib/mysql
+      - ./init.sql:/data/application/init.sql
+    command: --init-file /data/application/init.sql
     ports:
       - "3306:3306"
+  siteserver:
+    build:
+      context: ./BDayBoardServer
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    
