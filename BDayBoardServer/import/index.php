@@ -1,5 +1,5 @@
 <?php
-$hostname = "192.168.0.35:3306";
+$hostname = "192.168.1.51:3306";
 $username = "root";
 $password = "password";
 $db = "partydb";
