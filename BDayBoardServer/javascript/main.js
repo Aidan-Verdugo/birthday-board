@@ -137,10 +137,16 @@ function setname(){
     let nameText = document.getElementById("n1");
     
     
-    if(childIndex >= childNameActive.length){childIndex = 0;}
+    if (childIndex >= childNameActive.length){childIndex = 0;}
+// add extra loops here for backgrounds
     if (themeActive[childIndex] == "Dino"){bgImage = bgFiles[0];}
     if (themeActive[childIndex] == "Temp"){bgImage = bgFiles[1];}
     if (themeActive[childIndex] == "empty"){bgImage = bgFiles[2];}
+
+
+
+
+
     if (childNameActive[childIndex] == "empty") {nameText.innerHTML = " "}
     else {nameText.innerHTML = childNameActive[childIndex];}
     bgElement.src = bgImage;
