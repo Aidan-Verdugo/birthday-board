@@ -6,7 +6,7 @@ let childName = ["empty"];
 let theme = ["empty"];
 let partyTime = ["empty"];
 let partyDate = ["empty"]
-let bgFiles = ["../backgrounds/dino.png","../backgrounds/temp.png","../backgrounds/no-parties.png"];
+let bgFiles = ["../backgrounds/dino.png","../backgrounds/art.png","../backgrounds/tech","../backgrounds/standard","../backgrounds/no-parties.png"];
 let time = new Date();
 
 //misc vars
@@ -140,8 +140,12 @@ function setname(){
     if (childIndex >= childNameActive.length){childIndex = 0;}
 // add extra loops here for backgrounds
     if (themeActive[childIndex] == "Dino"){bgImage = bgFiles[0];}
-    if (themeActive[childIndex] == "Temp"){bgImage = bgFiles[1];}
-    if (themeActive[childIndex] == "empty"){bgImage = bgFiles[2];}
+    if (themeActive[childIndex] == "Art"){bgImage = bgFiles[1];}
+    if (themeActive[childIndex] == "Tech"){bgImage = bgFiles[2];}
+    if (themeActive[childIndex] == "Standard"){bgImage = bgFiles[3];}
+    if (themeActive[childIndex] == "empty"){bgImage = bgFiles[4];}
+
+    
 
 
 

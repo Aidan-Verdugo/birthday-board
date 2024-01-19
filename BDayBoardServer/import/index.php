@@ -82,8 +82,10 @@ $result = mysqli_query($dbconnect, $query);
                                 <input name="time_input" type="time"> 
                                 <input type="number" name="day_input" placeholder="Day" style="width: 20%;"> 
                                 <select name="theme_input">
+                                    <option value="Standard">Standard</option>    
                                     <option value="Dino">Dinosaur</option>
-                                    <option value="Temp">Temp</option>
+                                    <option value="Art">Art</option>
+                                    <option value="Tech">Tech</option>
                                 </select> 
                                 <input  type="submit" name="submit" value="Add">
                             </div>
