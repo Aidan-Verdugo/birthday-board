@@ -139,10 +139,10 @@ function setname(){
     
     if (childIndex >= childNameActive.length){childIndex = 0;}
 // add extra loops here for backgrounds
-    if (themeActive[childIndex] == "Dino"){bgImage = bgFiles[0];}
-    if (themeActive[childIndex] == "Art"){bgImage = bgFiles[1];}
-    if (themeActive[childIndex] == "Tech"){bgImage = bgFiles[2];}
-    if (themeActive[childIndex] == "Standard"){bgImage = bgFiles[3];}
+    if (themeActive[childIndex] == "Dino"){bgImage = bgFiles[0]; document.getElementById("n1").style.color = "white";}
+    if (themeActive[childIndex] == "Art"){bgImage = bgFiles[1]; document.getElementById("n1").style.color = "black";}
+    if (themeActive[childIndex] == "Tech"){bgImage = bgFiles[2]; document.getElementById("n1").style.color = "white";}
+    if (themeActive[childIndex] == "Standard"){bgImage = bgFiles[3]; document.getElementById("n1").style.color = "black";}
     if (themeActive[childIndex] == "empty"){bgImage = bgFiles[4];}
 
     
