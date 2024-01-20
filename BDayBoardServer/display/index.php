@@ -58,7 +58,7 @@ fclose($fp);
     <body>
         
             
-        <img id="bg" src="../backgrounds/dino.png"  height="100%">
+        <img id="bg" src="../backgrounds/dino.png">
  
         <div class="centered-text">
             <p id="n1">NAME.NAME</p>
