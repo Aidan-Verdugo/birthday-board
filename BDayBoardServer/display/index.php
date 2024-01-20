@@ -52,6 +52,7 @@ fclose($fp);
     <head>
         <link rel="stylesheet" href="../CSS/main.css">
         <title>Birthday Announcements</title>
+        <meta http-equiv="refresh" content="900"><!-- refresh ever 'content' seconds -->
         
     </head>
     <body>
