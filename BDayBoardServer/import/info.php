@@ -1,7 +1,7 @@
 <?php
 header("Location: /import/index.php");
 #-------------------
-$hostname = "192.168.1.51:3306";
+$hostname = "192.168.1.48:3306";
 $username = "root";
 $password = "password";
 $db = "partydb";
