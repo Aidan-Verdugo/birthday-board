@@ -3,6 +3,7 @@ volumes:
   data:
 services:
   db:
+    restart: always
     image: mariadb
     environment:
       MYSQL_ROOT_PASSWORD: password
@@ -16,6 +17,7 @@ services:
     ports:
       - "3306:3306"
   siteserver:
+    restart: always
     build:
       context: ./BDayBoardServer
       dockerfile: Dockerfile
